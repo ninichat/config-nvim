@@ -109,18 +109,21 @@ endif
 " Disable highlight - enter
 map <silent> <cr> :noh<cr>
 
-" Special SPICY stuff
-map <leader>r :read !
+" Special SPICY stuff = output sh command in vim
+map <leader><space> :read !
 
 nmap <space> :Files<cr>
-nmap <leader>f :Files<cr>
+nmap <leader>f :GFiles<cr>
 nmap <leader>e :Buffers<cr>
+" Requires the_silver_searcher
 nmap <leader>a :Ag<cr>
+" Requires ripgrep
+nmap <leader>r :Rg<cr>
 
 " Easier way to move around windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
-map <C-h> <C-W>h
+map <C-h> <C-w>h
 map <C-l> <C-W>l
 
 " Close current buf, all buf
